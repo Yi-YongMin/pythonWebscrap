@@ -21,12 +21,19 @@
 from random import randint,random  #random 모듈에서 randint 라는 함수를 쓰겠다는 선언
 achoice=int(input("Choose number"))
 bchoice= randint(1,100)
-if achoice==bchoice:
-    print("SAME")
-elif achoice>bchoice:
-    print("당신이 선택한 숫자가 더 높음. computer's choice is",bchoice)
-else :
-    print("당신이 선택한 숫자가 더 낮음. computer's choice is",bchoice)
+playing=True
+while playing:
+    if achoice==bchoice:
+        print("SAME")
+        playing=False
+    elif achoice > bchoice:
+        print("당신이 선택한 숫자가 더 높음.")
+        achoice = int(input("Choose number"))
+    else :
+        print("당신이 선택한 숫자가 더 낮음.")
+        achoice = int(input("Choose number"))
+
+
 
 
 
