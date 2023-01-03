@@ -17,7 +17,7 @@ print(player.get('favorite'))# 아래와 동치이다.
 print(player['favorite'])
 player.pop('age') #key & value 제거
 print(player)
-player['lv']=1
+player['lv']=1 #키와 밸류를 추가시키는 동작.///////////////////////////////////////////////////
 print(player)
 player['favorite'].append("basketball")#player안에있는 키의 이름이 'favorite'이다. 키가 갖는 value가 리스트이고 그 리스트가 가지는 built_in함수 append 활용가능.
 print(player)
