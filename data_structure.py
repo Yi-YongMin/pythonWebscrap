@@ -1,5 +1,5 @@
 # name="nico"
-# print(name.endswith("o")) endswith 같은 것을 method라고 부른다.
+# print(name.endswith("o")) endswith 같은 것을 method라고 부른다. 점 붙이고 쓰는 함수
 days_of_week=["MON","TUE","WED","THUR","FRI"]
 print(days_of_week.count("WED"))
 print(days_of_week[3]) # start from 0.
@@ -13,8 +13,8 @@ player = { #dictionary 구조를 만들 때에는 등호로 속성을 표시하�
     'favorite':["soccer","baseball"]
 }
 print(player)
-print(player.get('age'))
-print(player.get('favorite'))
+print(player.get('favorite'))# 아래와 동치이다.
+print(player['favorite'])
 player.pop('age') #key & value 제거
 print(player)
 player['lv']=1
