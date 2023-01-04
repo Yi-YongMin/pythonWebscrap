@@ -18,9 +18,10 @@ else:
             anchor=anchors[1]
             link=anchor['href']
             company,position,region=anchor.find_all('span',class_="company")
-            title=anchor.find('span',class_='title')
+            title=anchor.find('span',class_='title') #find_all은 list를 주지만, find는 하나의 항목만 준다.
             print(company.string,position.string,region.string,title.string)
             job_data={
+                'link':f"https://weworkremotely.com{link}",
                 'company':company.string,
                 'region':region.string,
                 'title':title.string
